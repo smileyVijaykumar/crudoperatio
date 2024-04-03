@@ -1,0 +1,134 @@
+
+
+// import React from "react";
+// import ReactDOM from "react-dom";
+// // !react fragments
+// // ReactDOM.render(<>
+// //     <h1>Hello Header</h1>
+// // <span>Span tag</span>
+// // </>
+// // ,document.getElementById("root"),()=>{
+// //     console.log("DOM is connected")
+// // })
+
+// // !JSX Expressions {}
+// // let value=1000;
+// let arr=["Harish","Bharath","Surya","Shambu"];
+// // let iterate=arr.map((val,i)=>{
+// //     return val
+// // })
+// ReactDOM.render(<>
+// {/* <h1>{100*200}</h1> */}
+// {/* <h1>{value}</h1> */}
+// {/* <h1>{iterate}</h1> */}
+// {
+//   arr.map(users=>{
+//     return(
+//         <>
+//         <h1>{users}</h1>
+//         </>
+//     )
+//   })  
+// }
+// </>
+// ,document.getElementById("root"),()=>{
+//     console.log("DOM is connected")
+// })
+
+
+
+
+
+import React from "react";
+class App extends React.Component{
+    render(){
+        return(
+           <>
+            <h1>Class Based Component</h1>
+            <img src="https://cdn.pixabay.com/photo/2023/09/14/19/14/landscape-8253576_1280.jpg" width={250} height={250}/>
+           </>
+        )
+    }
+}
+// export default App;
+export{
+    App
+}
+
+
+    // import React,{Component} from "react";
+    // class App extends Component{
+    //     render(){
+    //         return(
+    //             <>
+    //             <h1>Class Based Component</h1>
+    //             </>
+    //         )
+    //     }
+    // }
+    // export default App;
+
+// !js function
+
+// function App(){
+//     return(
+//         <>
+//  <h1>Functional 
+//based component</h1>
+//         </>
+//     )
+// }
+// export default App;
+
+
+
+
+
+
+/
+import React from 'react'
+const App=()=>{
+    return(
+        <>
+        <h1>Functional based component</h1>
+        </>
+    )
+}
+export default App;
+
+
+// 16/11/23
+// fbc state
+  {/* <Navbar/> */}
+        {/* <CBCState/> */}
+        <FBCState/>
+
+        import React , {useState} from 'react'
+
+const FBCState = () => {
+//  let [initialValue,fun]=useState({
+//   name:"X",
+//   age:40,
+//   company:"Google"
+//  });
+// let [initialValue,fun]=useState([1,2,3,4,5]);
+//  console.log(initialValue)
+//  console.log(fun)
+// let [initialValue,setInitialValue]=useState("Harish");
+let [initialValue,setInitialValue]=useState(0);
+
+// let handleClick=()=>{
+//   setInitialValue(initialValue + 1);
+// }
+console.log("component called...")
+  return (
+    <div>
+   <h1>{initialValue}</h1>
+   <button onClick={handleClick}>Change Name</button>
+    </div>
+  )
+}
+
+export default FBCState
+
+
